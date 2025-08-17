@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Sunstone Bistro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-6">
+          <a href="index.html" class="flex items-center space-x-3">
+            <div class="h-10 w-10 bg-amber-400 rounded-full flex items-center justify-center font-bold text-white">S</div>
+            <div>
+              <h1 class="text-lg font-semibold">Sunstone Bistro</h1>
+              <p class="text-xs text-gray-500">Seasonal. Local. Lovely.</p>
+            </div>
+          </a>
+
+          <nav class="hidden md:flex items-center space-x-6">
+            <a href="index.html" class="text-gray-700 hover:text-amber-500">Home</a>
+            <a href="about.html" class="text-gray-700 hover:text-amber-500">About</a>
+            <a href="contact.html" class="text-gray-700 hover:text-amber-500">Contact</a>
+          </nav>
+
+          <div class="md:hidden">
+            <button id="mobileMenuButton" class="p-2 rounded-md bg-amber-500 text-white focus:outline-none">Menu</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+        <div class="px-4 py-3 space-y-2">
+          <a href="index.html" class="block text-gray-700">Home</a>
+          <a href="about.html" class="block text-gray-700">About</a>
+          <a href="contact.html" class="block text-gray-700">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="bg-white rounded-lg shadow p-8">
+        <h2 class="text-2xl font-bold mb-4">Contact & Reservations</h2>
+        <p class="text-gray-600 mb-6">We accept reservations by phone and online requests. Use the form below for general inquiries or to request a reservation. We'll get back to you within one business day.</p>
+
+        <form id="contactForm" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Full name</label>
+            <input type="text" id="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500" placeholder="Your name" required />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" id="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500" placeholder="you@example.com" required />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Message (or reservation details)</label>
+            <textarea id="message" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500" placeholder="Preferred date, time, party size, or your question..." required></textarea>
+          </div>
+
+          <div class="flex items-center space-x-3">
+            <button type="submit" class="px-5 py-3 bg-amber-500 text-white rounded-md hover:bg-amber-600">Send Message</button>
+            <button type="button" id="clearBtn" class="px-5 py-3 border border-gray-300 rounded-md hover:bg-gray-50">Clear</button>
+          </div>
+
+          <p id="formStatus" class="text-sm text-green-600 hidden">Thanks — your message was received. We'll be in touch shortly.</p>
+        </form>
+
+        <div class="mt-8 border-t pt-6 text-sm text-gray-600">
+          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p class="mt-1"><strong>Address:</strong> 123 Market Lane, YourCity</p>
+          <p class="mt-1"><strong>Hours:</strong> Tue–Sun 5pm–10pm</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-200 py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between">
+        <div>
+          <h4 class="font-semibold">Sunstone Bistro</h4>
+          <p class="text-sm text-gray-400">123 Market Lane, YourCity — Open Tue–Sun</p>
+        </div>
+        <div class="mt-6 md:mt-0 text-sm text-gray-400">
+          <a href="index.html" class="hover:text-white">Home</a> · <a href="about.html" class="hover:text-white">About</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

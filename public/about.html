@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — Sunstone Bistro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-6">
+          <a href="index.html" class="flex items-center space-x-3">
+            <div class="h-10 w-10 bg-amber-400 rounded-full flex items-center justify-center font-bold text-white">S</div>
+            <div>
+              <h1 class="text-lg font-semibold">Sunstone Bistro</h1>
+              <p class="text-xs text-gray-500">Seasonal. Local. Lovely.</p>
+            </div>
+          </a>
+
+          <nav class="hidden md:flex items-center space-x-6">
+            <a href="index.html" class="text-gray-700 hover:text-amber-500">Home</a>
+            <a href="about.html" class="text-gray-700 hover:text-amber-500">About</a>
+            <a href="contact.html" class="text-gray-700 hover:text-amber-500">Contact</a>
+          </nav>
+
+          <div class="md:hidden">
+            <button id="mobileMenuButton" class="p-2 rounded-md bg-amber-500 text-white focus:outline-none">Menu</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+        <div class="px-4 py-3 space-y-2">
+          <a href="index.html" class="block text-gray-700">Home</a>
+          <a href="about.html" class="block text-gray-700">About</a>
+          <a href="contact.html" class="block text-gray-700">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <article class="bg-white rounded-lg shadow p-8">
+        <h2 class="text-3xl font-bold mb-4">Our Story</h2>
+        <p class="text-gray-600 mb-4">Founded in 2019 by chef Lila Moreno, Sunstone Bistro began as a small supper club celebrating seasonal produce and simple techniques. Over the years we've partnered with nearby farms and purveyors to bring fresh, sustainable ingredients straight to your plate.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div>
+            <img src="https://pixabay.com/get/gfc8e967e65de9348ff4234d9d29e8cea570ad0e7ef699c069d7a52e1d6ff2f811e1f507ab69e400b7fba83a206c2ad236eca30987f4e5becfcffc77ed39bce56_640.jpg" alt="Chef in kitchen" class="w-full h-60 object-cover rounded-md shadow" />
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold">Our Philosophy</h3>
+            <p class="text-gray-600 mt-3">We believe in food that honors the seasons and the people who grow it. Menus change regularly to reflect what's freshest and most flavorful. Whether you're joining us for a weeknight dinner or a weekend celebration, expect care in every bite.</p>
+          </div>
+        </div>
+
+        <section class="mt-8">
+          <h4 class="text-lg font-semibold">Meet the Team</h4>
+          <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <li class="flex items-center space-x-4">
+              <img src="https://pixabay.com/get/g0d6719013695330656c15c43069b2442cdbf427467577cd51d68f7a8ee6625c74672108af2720ebe64095924725f26e5839c2cba2e49a48434acc11310bf8737_640.jpg" alt="Chef Lila" class="w-16 h-16 rounded-full object-cover" />
+              <div>
+                <div class="font-semibold">Lila Moreno</div>
+                <div class="text-sm text-gray-500">Executive Chef & Owner</div>
+              </div>
+            </li>
+
+            <li class="flex items-center space-x-4">
+              <img src="https://images.pexels.com/photos/5717260/pexels-photo-5717260.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Manager" class="w-16 h-16 rounded-full object-cover" />
+              <div>
+                <div class="font-semibold">Marcus Reed</div>
+                <div class="text-sm text-gray-500">General Manager</div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <div class="mt-8">
+          <a href="contact.html" class="px-5 py-3 bg-amber-500 text-white rounded-md hover:bg-amber-600">Get in Touch</a>
+          <a href="index.html" class="ml-3 px-5 py-3 border border-amber-500 text-amber-500 rounded-md hover:bg-amber-50">Back to Home</a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-200 py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between">
+        <div>
+          <h4 class="font-semibold">Sunstone Bistro</h4>
+          <p class="text-sm text-gray-400">123 Market Lane, YourCity — Open Tue–Sun</p>
+        </div>
+        <div class="mt-6 md:mt-0 text-sm text-gray-400">
+          <a href="index.html" class="hover:text-white">Home</a> · <a href="contact.html" class="hover:text-white">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
